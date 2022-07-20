@@ -1,0 +1,105 @@
+#cards_home{
+    .cards_home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 170px;
+
+        .titulo-geral{
+            margin-bottom: 48px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            color: #3D3542;
+
+        }
+
+        .cards{
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .card{
+                display: flex;
+                flex-direction: column;
+                max-width: 286px;
+                background: #FFFFFF;
+                border: 1px solid rgba(81, 12, 118, 0.1);
+                box-shadow: 0px 1px 4px rgba(81, 12, 118, 0.12);
+                border-radius:   16px;
+                
+                .intro-card{
+                    position: relative;
+                    
+
+                    .icon-card{
+                        background: #FFFFFF;
+                        border: 1px solid #E6E5E7;
+                        box-shadow: 8px 12px 24px rgba(73, 80, 87, 0.08);
+                        border-radius: 4px;
+                        max-width: 60px;
+                        padding: 12px 14px;
+                        position: absolute;
+                        top: 65%;
+                        left: 16px;
+                    }
+                }
+    
+                .card-info{
+                    padding: 60px 16px 16px 16px;
+                    flex: 1;
+                    h1{
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -0.01em;
+                        color: #564E5A;
+                        margin-bottom: 16px;
+                    }
+
+                    p{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 140%;
+                        letter-spacing: -0.01em;
+                        color: #6E6771;
+                        max-width: 229px;
+                    }
+
+                    
+                }
+                .card-button.desativado{
+                    background: #6E6771;
+                    filter: invert(0%) sepia(6%) saturate(0) hue-rotate(238deg) brightness(140%) contrast(86%);
+                    a{
+                       
+                        cursor: default;
+                    }
+                }
+                .card-button{
+                    background: rgba(81, 12, 118, 0.1);
+                    border-radius: 4px;
+                    padding: 12px 16px;
+                    max-width: max-content;
+                    margin-left:  16px;
+                    margin-bottom: 16px;
+                
+                    a{
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: -0.01em;
+                        color: #510C76;
+                        display: flex;
+                        align-items: center;
+                       img{
+                            margin-left: 6px;
+                       }
+                    }
+                   
+                }
+            }
+        }
+        
+    }
+}
